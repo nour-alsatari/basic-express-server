@@ -10,7 +10,8 @@ app.use(logger); // application level
 
 app.get("/", (req, res) => {
   console.log("logger should be above me");
-  // throw new Error('BROKEN')
+res.send ('saying hi')
+
 });
 
 app.get("/person", validator, (req, res) => {
